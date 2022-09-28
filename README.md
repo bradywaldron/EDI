@@ -1,2 +1,3 @@
 # EDI
- EDI class materials
+EDI class materials
+https://bradywaldron.github.io/EDI/
