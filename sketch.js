@@ -18,13 +18,14 @@ var num = 30; //number of sides
 var sidelen = windowWidth/num;
 
 
-for (var y=0; y<windowWidth; y=y+sidelen){
+for (var y=0; y<2*windowWidth; y=y+sidelen){
 
-for (var x=0; x<windowWidth; x=x+sidelen){
-  quad(x,y,
-       x+sidelen,y,
-       x+sidelen, y+ sidelen,
-       x,y+sidelen);
+for (var x=0; x<2*windowWidth; x=x+sidelen){
+image(gif,x,y,windowWidth/num,windowWidth/num);
+
 }
 }
+}
+function windowResized(){
+  resizeCanvas(windowWidth,windowHeight);
 }
